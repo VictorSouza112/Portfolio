@@ -43,5 +43,5 @@ body::before {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #002090;
+  background: #002090;
 }

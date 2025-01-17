@@ -1,0 +1,89 @@
+/* Estilos gerais para o header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Estilos para a navegação */
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a span {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  transition: filter 0.1s ease;
+}
+
+header nav ul li a:hover {
+  color: #0039ff;
+}
+
+header nav ul li a:hover span {
+  filter: invert(38%) sepia(95%) saturate(5000%) hue-rotate(210deg) brightness(100%) contrast(100%);
+}
+
+/* Estilos para os botões */
+header .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+header .buttons a {
+  /* Estilo para o link do botão "Resumo" e "Github" */
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #002090;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+header .buttons a span {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+header .buttons a:hover {
+  background-color: #002090;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .buttons {
+    margin-top: 1rem;
+  }
+}

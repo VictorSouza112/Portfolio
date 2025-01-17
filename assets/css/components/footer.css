@@ -1,5 +1,5 @@
 footer {
-  background-color: hwb(0 0% 100% / 0.5);
+  background-color: hwb(226 0% 86% / 0.5);;
 }
 
 .footer-container {
@@ -21,18 +21,21 @@ footer {
   display: flex;
   align-items: center;
 }
+
 .footer-right a span {
   display: flex;
   align-items: center;
   transition: filter 0.1s ease;
 }
+
 .footer-right a span img {
   height: 25px;
   width: 25px;
 }
 
-.footer-right a span:hover{
-  filter: invert(38%) sepia(95%) saturate(5000%) hue-rotate(210deg) brightness(100%) contrast(100%);
+.footer-right a span:hover {
+  filter: invert(38%) sepia(95%) saturate(5000%) hue-rotate(210deg)
+    brightness(100%) contrast(100%);
 }
 
 @media (max-width: 600px) {

@@ -12,16 +12,6 @@
   padding-right: 10px;
 }
 
-.image-content {
-  flex: 1;
-  justify-content: center;
-}
-
-.image-content img {
-  height: auto;
-  max-width: 100%;
-}
-
 .text-content h1 {
   font-size: 3em;
 }
@@ -35,30 +25,37 @@
 }
 
 @keyframes wave-animation {
-0% {
-  transform: rotate(0deg);
-}
-10% {
-  transform: rotate(14deg);
-}
-20% {
-  transform: rotate(-8deg);
-}
-30% {
-  transform: rotate(14deg);
-}
-40% {
-  transform: rotate(-4deg);
-}
-50% {
-  transform: rotate(10deg);
-}
-60% {
-  transform: rotate(0deg);
-}
-100% {
-  transform: rotate(0deg);
-}
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .text-content h2 {
@@ -72,20 +69,34 @@
   overflow: hidden;
   display: inline-block;
   border-right: 0.15em solid #0039ff;
-  animation: blink-caret 0.75s step-end infinite; /* Animação da linha vertical que pisca */
+  animation: blink-caret 0.75s step-end infinite;
+  /* Animação da linha vertical que pisca */
 }
+
 .typing-text {
-  animation: typing 2s steps(20) forwards; /* Animação da máquina de escrever */
+  animation: typing 2s steps(20) forwards;
+  /* Animação da máquina de escrever */
 }
 
 .blue-text {
   color: #0039ff;
 }
 
+.image-content {
+  flex: 1;
+  justify-content: center;
+}
+
+.image-content img {
+  height: auto;
+  max-width: 100%;
+}
+
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -97,14 +108,22 @@
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: #0039ff;
   }
 }
 
 @media (max-width: 600px) {
-  .image-content {
-    display: none;
+  .content-wrapper {
+    margin-top: 5em;
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .text-content {
+    padding-right: 0;
   }
 
   .text-content h1,

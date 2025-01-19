@@ -68,7 +68,7 @@
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  border-right: 0.15em solid #0039ff;
+  border-right: 0.15em solid var(--color-text-secondary);
   animation: blink-caret 0.75s step-end infinite;
   /* Animação da linha vertical que pisca */
 }
@@ -76,10 +76,6 @@
 .typing-text {
   animation: typing 2s steps(20) forwards;
   /* Animação da máquina de escrever */
-}
-
-.blue-text {
-  color: #0039ff;
 }
 
 .image-content {
@@ -110,7 +106,7 @@
   }
 
   50% {
-    border-color: #0039ff;
+    border-color: var(--color-text-secondary);
   }
 }
 

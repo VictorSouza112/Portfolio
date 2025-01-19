@@ -29,10 +29,6 @@
   margin-top: 20px;
 }
 
-.blue-text {
-  color: #0039ff;
-}
-
 .image-content {
   flex: 1;
   display: flex;
@@ -44,22 +40,25 @@
   height: auto;
 }
 
-/* Estilos para a seção de habilidades */
-.skills-container, .tools-container {
+/* Estilos para a seção de habilidades e ferramentas */
+.skills-container,
+.tools-container {
   text-align: center;
 }
 
-.tools-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
+.tools-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.skills-container h2, .tools-container h2 {
+.skills-container h2,
+.tools-container h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 
-.skills-grid, .tools-grid {
+.skills-grid,
+.tools-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -68,53 +67,21 @@
   padding: 20px;
 }
 
-.skill-item, .tool-item {
-    border: 2px solid #0039FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden; 
-    transition: transform 0.3s ease; 
-    text-decoration: none;
-}
-
-.skill-item::before, .tool-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent, #002090, transparent);
-    z-index: 1;
-    pointer-events: none;
-    background-size: 500%;
-}
-
-.skill-item:hover, .tool-item:hover {
-    transform: scale(1.1);
-}
-
-.skill-item:hover::before, .tool-item:hover::before {
-    animation: border-glow 7s linear infinite; 
-}
-
-.skill-item img, .tool-item img{
-    max-width: 70%;
-    height: auto;
-    z-index: 2;
+.item-with-gradient img,
+.item-with-gradient img {
+  max-width: 70%;
+  height: auto;
+  z-index: 2;
 }
 
 @keyframes border-glow {
-    0% {
-        background-position: 0 0;
-    }
-    100%{
-        background-position: 300% 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 300% 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -144,7 +111,8 @@
 }
 
 @media (max-width: 500px) {
-  .skills-grid {
+  .skills-grid,
+  .tools-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }

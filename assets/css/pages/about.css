@@ -67,12 +67,19 @@
   padding: 20px;
 }
 
-.item-with-gradient img,
+.item-with-gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .item-with-gradient img {
   max-width: 70%;
   height: auto;
   z-index: 2;
 }
+
+/* Animação de gradiente para os cards está no styles.css */
 
 @keyframes border-glow {
   0% {

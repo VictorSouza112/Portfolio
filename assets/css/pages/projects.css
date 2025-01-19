@@ -1,0 +1,86 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin-top: 3em;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-content h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1.5em;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item-with-gradient {
+  flex-direction: column;
+}
+
+.item-with-gradient img {
+  max-width: 70%;
+  height: auto;
+  z-index: 2;
+}
+
+.item-with-gradient h3 {
+  font-size: 1.8em;
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+.item-with-gradient p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+.buttons {
+  z-index: 2;
+}
+
+/* Restante dos estilos para os botões está no styles.css */
+
+@keyframes border-glow {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 400% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

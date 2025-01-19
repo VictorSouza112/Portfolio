@@ -1,0 +1,67 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.experience-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-content h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1.5em;
+}
+
+.item-with-gradient h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  z-index: 2;
+  position: relative;
+}
+
+.item-with-gradient p {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  z-index: 2;
+  position: relative;
+}
+
+.item-with-gradient ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Animação de gradiente para os cards está no styles.css */
+
+@keyframes border-glow {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 400% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-wrapper {
+    margin-top: 5em;
+  }
+}

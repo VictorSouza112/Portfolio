@@ -35,6 +35,9 @@ main {
 }
 
 .item-with-gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -61,7 +64,7 @@ main {
   z-index: 2;
 }
 
-/* Restante dos estilos para os botões está no styles.css */
+/* Restante dos estilos para os botões e animação de gradiente para os cards estão no styles.css */
 
 @keyframes border-glow {
   0% {

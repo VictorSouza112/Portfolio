@@ -37,22 +37,13 @@ header nav ul li a {
   align-items: center;
   gap: 5px;
   transition: color 0.3s ease;
-}
-
-header nav ul li a {
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
   transition: filter 0.1s ease;
 }
 
 header nav ul li a:hover {
   color: var(--color-text-secondary);
-}
-
-header nav ul li a:hover {
   filter: invert(38%) sepia(95%) saturate(5000%) hue-rotate(210deg)
-    brightness(100%) contrast(100%);
+  brightness(100%) contrast(100%);
 }
 
 /* Estilos para os botões está no styles.css */

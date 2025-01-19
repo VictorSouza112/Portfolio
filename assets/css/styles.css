@@ -1,10 +1,89 @@
+:root {
+  /* Cores */
+  --color-background: hwb(226 0% 86% / 0.9);
+  --color-text-primary: white;
+  --color-text-secondary: #0039ff;
+  --color-gradient: #00155f;
+  --color-button: #002090;
+  --color-button-hover: rgba(0, 32, 144, 0.8);
+
+  /* Fontes */
+  --font-primary: "Open Sans", sans-serif;
+}
+
+.blue-text {
+  color: #0039ff;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--color-button);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+  background-color: var(--color-button-hover);
+}
+
+.item-with-gradient {
+  border: 2px solid var(--color-text-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.item-with-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-gradient),
+    transparent
+  );
+  z-index: 1;
+  pointer-events: none;
+  background-size: 500%;
+}
+
+.item-with-gradient:hover {
+  transform: scale(1.05);
+}
+
+.item-with-gradient:hover::before {
+  animation: border-glow 7s linear infinite;
+}
+
 body {
   background-color: black;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
+  font-family: var(--font-primary);
+  color: var(--color-text-primary);
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }

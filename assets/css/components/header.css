@@ -13,7 +13,7 @@ header {
 }
 
 header.header-bg {
-  background-color: hwb(226 0% 86% / 0.9);
+  background-color: var(--color-background);
    padding: 35px 40px;
 }
 
@@ -35,10 +35,11 @@ header nav ul li a {
   font-weight: bold;
   display: flex;
   align-items: center;
+  gap: 5px;
   transition: color 0.3s ease;
 }
 
-header nav ul li a span {
+header nav ul li a {
   margin-right: 5px;
   display: flex;
   align-items: center;
@@ -46,44 +47,15 @@ header nav ul li a span {
 }
 
 header nav ul li a:hover {
-  color: #0039ff;
+  color: var(--color-text-secondary);
 }
 
-header nav ul li a:hover span {
+header nav ul li a:hover {
   filter: invert(38%) sepia(95%) saturate(5000%) hue-rotate(210deg)
     brightness(100%) contrast(100%);
 }
 
-/* Estilos para os botões */
-header .buttons {
-  display: flex;
-  gap: 10px;
-}
-
-header .buttons a {
-  /* Estilo para o link do botão "Resumo" e "Github" */
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: #002090;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-header .buttons a span {
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
-}
-
-header .buttons a:hover {
-  background-color: #002090;
-  opacity: 0.8;
-}
+/* Estilos para os botões está no styles.css */
 
 @media (max-width: 600px) {
   header {

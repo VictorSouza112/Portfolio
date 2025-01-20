@@ -1,0 +1,90 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin-top: 3em;
+}
+
+.certificates-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-content h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item-with-gradient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-with-gradient img {
+  max-width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+.item-with-gradient h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+  z-index: 2;
+}
+
+.item-with-gradient p {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+.buttons {
+  z-index: 2;
+}
+
+/* Restante dos estilos para os botões e animação de gradiente para os cards estão no styles.css */
+
+@keyframes border-glow {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 400% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .certificates-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -4,6 +4,27 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("header-container").innerHTML = data;
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeIcon = themeToggle.querySelector(".theme-icon");
+
+      // Verifica o tema armazenado no localStorage
+      const storedTheme = localStorage.getItem("theme");
+
+      if (storedTheme === "light") {
+        document.body.classList.add("light-theme");
+        themeIcon.src = "../assets/img/components/header/moon.svg";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-theme");
+        if (document.body.classList.contains("light-theme")) {
+          themeIcon.src = "../assets/img/components/header/moon.svg";
+          localStorage.setItem("theme", "light");
+        } else {
+          themeIcon.src = "../assets/img/components/header/sun.svg";
+          localStorage.setItem("theme", "dark");
+        }
+      });
     });
 
   // Adiciona o background no header ao scrollar

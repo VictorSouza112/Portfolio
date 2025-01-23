@@ -31,7 +31,7 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--color-text-primary);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -44,6 +44,16 @@ header nav ul li a:hover {
   color: var(--color-text-secondary);
   filter: invert(38%) sepia(95%) saturate(5000%) hue-rotate(210deg)
   brightness(100%) contrast(100%);
+}
+
+.theme-change {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.theme-toggle {
+  cursor: pointer;
 }
 
 /* Estilos para os botões está no styles.css */

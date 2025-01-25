@@ -14,22 +14,22 @@ header {
 
 header.header-bg {
   background-color: var(--color-background);
-   padding: 35px 40px;
+  padding: 35px 40px;
 }
 
-/* Estilos para a navegação */
-header nav ul {
+/* Estilos para a navegação para desktop */
+.header-desktop ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-header nav ul li {
+.header-desktop ul li {
   margin-right: 20px;
 }
 
-header nav ul li a {
+.header-desktop ul li a {
   text-decoration: none;
   color: var(--color-text-primary);
   font-weight: bold;
@@ -40,10 +40,10 @@ header nav ul li a {
   transition: filter 0.1s ease;
 }
 
-header nav ul li a:hover {
+.header-desktop ul li a:hover {
   color: var(--color-text-secondary);
   filter: invert(38%) sepia(95%) saturate(5000%) hue-rotate(210deg)
-  brightness(100%) contrast(100%);
+    brightness(100%) contrast(100%);
 }
 
 .theme-change {
@@ -54,22 +54,155 @@ header nav ul li a:hover {
 
 .theme-toggle {
   cursor: pointer;
+  margin-right: 10px;
+}
+
+.language-toggle {
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 /* Estilos para os botões está no styles.css */
 
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: center;
+/* Estilos para o header mobile */
+.header-mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-mobile-left{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  transition: filter 0.1s ease;
+}
+
+.menu-icon:hover{
+  filter: invert(38%) sepia(95%) saturate(5000%) hue-rotate(210deg)
+  brightness(100%) contrast(100%);
+}
+
+/* Estilos para o offcanvas */
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  /* Inicialmente fora da tela */
+  width: 300px;
+  height: 100%;
+  background-color: var(--color-background);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  z-index: 4;
+  padding: 0;
+}
+
+.offcanvas.active {
+  transform: translateX(300px);
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: var(--color-background);
+}
+
+.offcanvas-title {
+  color: var(--color-text-secondary);
+  font-size: 1.5em;
+}
+
+.offcanvas-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: filter 0.1s ease;
+}
+
+.offcanvas-close:hover {
+  filter: invert(38%) sepia(95%) saturate(5000%) hue-rotate(210deg)
+    brightness(100%) contrast(100%);
+}
+
+.offcanvas-body {
+  padding: 20px;
+}
+
+.offcanvas-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.offcanvas-body ul li {
+  margin-bottom: 10px;
+}
+
+.offcanvas-body ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-weight: bold;
+  gap: 10px;
+  transition: color 0.3s ease;
+  transition: filter 0.1s ease;
+}
+
+.buttons li a span {
+  color: #ffffff;
+}
+
+.offcanvas-body ul li a:hover {
+  color: var(--color-text-secondary);
+  filter: invert(38%) sepia(95%) saturate(5000%) hue-rotate(210deg)
+    brightness(100%) contrast(100%);
+}
+
+@media (max-width: 1100px) {
+  .header-desktop ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .header-desktop, .theme-change {
+    display: none;
   }
 
-  header .buttons {
-    margin-top: 1rem;
+  .header-mobile {
+    display: flex;
+  }
+
+  header {
+    padding: 20px 20px;
   }
 
   header.header-bg {
-    background-color: hwb(226 0% 86% / 0.9);
-     padding: 55px 40px;
+    padding: 35px 20px;
   }
 }

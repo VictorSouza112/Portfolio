@@ -1,5 +1,6 @@
 <header>
-  <nav>
+  <!-- Header para telas grandes -->
+  <nav class="header-desktop">
     <ul>
       <li>
         <a href="../pages/home.html">
@@ -18,7 +19,7 @@
             alt="Ícone About"
             class="icon-light"
           />
-          Sobre
+          <span data-i18n="header_about">Sobre</span>
         </a>
       </li>
       <li>
@@ -28,7 +29,7 @@
             alt="Ícone Projects"
             class="icon-light"
           />
-          Projetos
+          <span data-i18n="header_projects">Projetos</span>
         </a>
       </li>
       <li>
@@ -38,7 +39,7 @@
             alt="Ícone Projects"
             class="icon-light"
           />
-          Experiências
+          <span data-i18n="header_experience">Experiências</span>
         </a>
       </li>
       <li>
@@ -48,7 +49,7 @@
             alt="Ícone Certificates"
             class="icon-light"
           />
-          Certificados
+          <span data-i18n="header_certificates">Certificados</span>
         </a>
       </li>
       <li>
@@ -58,17 +59,18 @@
             alt="Ícone contact"
             class="icon-light"
           />
-          Contato
+          <span data-i18n="header_contact">Contato</span>
         </a>
       </li>
     </ul>
   </nav>
   <div class="theme-change">
-    <a id="theme-toggle" class="theme-toggle">
+    <a id="language-toggle-desktop" class="language-toggle">EN-US</a>
+    <a id="theme-toggle-desktop" class="theme-toggle">
       <img
         src="../assets/img/components/header/sun.svg"
         alt="Ícone Tema"
-        class="theme-icon"
+        class="theme-icon-desktop"
       />
     </a>
     <div class="buttons">
@@ -80,7 +82,7 @@
           src="../assets/img/components/header/resume-icon.svg"
           alt="Ícone Resume"
         />
-        Resumo
+        <span data-i18n="header_resume">Resumo</span>
       </a>
       <a
         href="https://github.com/VictorSouza112/Portfolio"
@@ -93,6 +95,132 @@
         />
         Github
       </a>
+    </div>
+  </div>
+
+  <!-- Header para telas pequenas -->
+  <nav class="header-mobile">
+    <div class="header-mobile-left">
+      <a id="language-toggle-mobile" class="language-toggle">EN-US</a>
+      <a id="theme-toggle-mobile" class="theme-toggle">
+        <img
+          src="../assets/img/components/header/sun.svg"
+          alt="Ícone Tema"
+          class="theme-icon-mobile"
+        />
+      </a>
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menu">
+      <img
+        src="../assets/img/components/header/menu-icon.svg"
+        alt="Ícone Menu"
+        class="menu-icon"
+      />
+    </button>
+  </nav>
+
+  <!-- Offcanvas -->
+  <div class="offcanvas" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Portfolio</h5>
+      <button class="offcanvas-close" aria-label="Fechar menu">
+        <img
+          src="../assets/img/components/header/close-icon.svg"
+          alt="Ícone fechar"
+        />
+      </button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul>
+        <li>
+          <a href="../pages/home.html">
+            <img
+              src="../assets/img/components/header/home-icon.svg"
+              alt="Ícone Home"
+              class="icon-light"
+            />
+            <span data-i18n="header_home">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="../pages/about.html">
+            <img
+              src="../assets/img/components/header/about-icon.svg"
+              alt="Ícone About"
+              class="icon-light"
+            />
+            <span data-i18n="header_about">Sobre</span>
+          </a>
+        </li>
+        <li>
+          <a href="../pages/projects.html">
+            <img
+              src="../assets/img/components/header/projects-icon.svg"
+              alt="Ícone Projects"
+              class="icon-light"
+            />
+            <span data-i18n="header_projects">Projetos</span>
+          </a>
+        </li>
+        <li>
+          <a href="../pages/experience.html">
+            <img
+              src="../assets/img/components/header/experience-icon.svg"
+              alt="Ícone Projects"
+              class="icon-light"
+            />
+            <span data-i18n="header_experience">Experiências</span>
+          </a>
+        </li>
+        <li>
+          <a href="../pages/certificates.html">
+            <img
+              src="../assets/img/components/header/certificates-icon.svg"
+              alt="Ícone Certificates"
+              class="icon-light"
+            />
+            <span data-i18n="header_certificates">Certificados</span>
+          </a>
+        </li>
+        <li>
+          <a href="../pages/contact.html">
+            <img
+              src="../assets/img/components/header/contact-icon.svg"
+              alt="Ícone contact"
+              class="icon-light"
+            />
+            <span data-i18n="header_contact">Contato</span>
+          </a>
+        </li>
+        <div class="buttons">
+          <li>
+            <a
+              href="../assets/docs/curriculo.pdf"
+              download="Victor-de-Souza-Curriculo.pdf"
+            >
+              <img
+                src="../assets/img/components/header/resume-icon.svg"
+                alt="Ícone Resume"
+              />
+              <span data-i18n="header_resume">Resumo</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/VictorSouza112/Portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="../assets/img/components/header/git-icon.svg"
+                alt="Ícone Git"
+              />
+              <span>Github</span>
+            </a>
+          </li>
+        </div>
+      </ul>
     </div>
   </div>
 </header>

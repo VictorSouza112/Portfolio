@@ -120,7 +120,7 @@ main {
 
 @media (max-width: 600px) {
   .content-wrapper {
-    margin-top: 5em;
+    margin-top: 2em;
     flex-direction: column;
     text-align: center;
     min-height: auto;

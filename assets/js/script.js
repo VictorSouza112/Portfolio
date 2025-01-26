@@ -262,7 +262,68 @@ document.addEventListener("DOMContentLoaded", () => {
           header.classList.remove("header-bg");
         }
       });
+
+      const downloadButtonDesktop = document.querySelector(
+        'header .buttons a[href="../assets/docs/curriculo.pdf"]'
+      );
+      const downloadButtonMobile = document.querySelector(
+        '.offcanvas-body ul .buttons a[href="../assets/docs/curriculo.pdf"]'
+      );
+      const downloadModal = document.getElementById("downloadModal");
+      const confirmDownloadButton = document.getElementById("confirmDownload");
+      const cancelDownloadButton = document.getElementById("cancelDownload");
+
+      function openModal() {
+        downloadModal.classList.add("active");
+      }
+
+      function closeModal() {
+        downloadModal.classList.remove("active");
+      }
+
+      function downloadPDF() {
+        const link = document.createElement("a");
+        link.href = "../assets/docs/curriculo.pdf";
+        link.download = "Victor-de-Souza-Curriculo.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
+      downloadButtonDesktop.addEventListener("click", (event) => {
+        event.preventDefault();
+        openModal();
+      });
+      downloadButtonMobile.addEventListener("click", (event) => {
+        event.preventDefault();
+        openModal();
+      });
+
+      confirmDownloadButton.addEventListener("click", () => {
+        // Inicia o download do PDF
+        downloadPDF();
+        closeModal();
+      });
+
+      cancelDownloadButton.addEventListener("click", () => {
+        closeModal();
+      });
+
+      // Fecha o modal ao clicar fora dele
+      document.addEventListener("click", (event) => {
+        if (
+          downloadModal.classList.contains("active") &&
+          !downloadModal
+            .querySelector(".modal-content")
+            .contains(event.target) &&
+          !downloadButtonDesktop.contains(event.target) &&
+          !downloadButtonMobile.contains(event.target)
+        ) {
+          closeModal();
+        }
+      });
     });
+
   // Importa o footer
   fetch("../components/footer.html")
     .then((response) => response.text())

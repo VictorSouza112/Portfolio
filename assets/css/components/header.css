@@ -152,10 +152,6 @@ header.header-bg {
   margin: 0;
 }
 
-.offcanvas-body ul li {
-  margin-bottom: 10px;
-}
-
 .offcanvas-body ul li a {
   display: flex;
   align-items: center;
@@ -171,6 +167,7 @@ header.header-bg {
   transition: filter 0.1s ease;
 }
 .buttons{
+  margin-top: 10px;
   margin-left: 15px;
 }
 

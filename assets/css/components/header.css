@@ -165,14 +165,6 @@ header.header-bg {
   transition: color 0.3s ease;
   transition: filter 0.1s ease;
 }
-.buttons{
-  margin-top: 10px;
-  margin-left: 15px;
-}
-
-.buttons li a span {
-  color: #ffffff;
-}
 
 .offcanvas-body ul li a:hover {
   color: var(--color-text-secondary);
@@ -201,6 +193,15 @@ header.header-bg {
     display: flex;
     flex-direction: column;
     left: -300px; 
+  }
+
+  .buttons{
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  .buttons li a span {
+    color: #ffffff;
   }
 
   header {

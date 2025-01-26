@@ -146,10 +146,6 @@ header.header-bg {
     brightness(100%) contrast(100%);
 }
 
-.offcanvas-body {
-  padding: 20px;
-}
-
 .offcanvas-body ul {
   list-style: none;
   padding: 0;
@@ -163,6 +159,10 @@ header.header-bg {
 .offcanvas-body ul li a {
   display: flex;
   align-items: center;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--color-text-secondary);
   text-decoration: none;
   color: var(--color-text-primary);
   font-weight: bold;

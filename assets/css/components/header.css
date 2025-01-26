@@ -103,8 +103,7 @@ header.header-bg {
 .offcanvas {
   position: fixed;
   top: 0;
-  left: -300px;
-  /* Inicialmente fora da tela */
+  display: none;
   width: 300px;
   height: 100%;
   background-color: var(--color-background);
@@ -196,6 +195,12 @@ header.header-bg {
 
   .header-mobile {
     display: flex;
+  }
+
+  .offcanvas {
+    display: flex;
+    flex-direction: column;
+    left: -300px; 
   }
 
   header {

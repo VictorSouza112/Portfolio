@@ -170,6 +170,9 @@ header.header-bg {
   transition: color 0.3s ease;
   transition: filter 0.1s ease;
 }
+.buttons{
+  margin-left: 15px;
+}
 
 .buttons li a span {
   color: #ffffff;

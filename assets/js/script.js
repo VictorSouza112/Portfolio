@@ -83,12 +83,34 @@ document.addEventListener("DOMContentLoaded", () => {
           projects_projects:
             'Meus Trabalhos <span class="blue-text">Recentes</span>',
           projects_here: "Aqui estão alguns dos meus projetos mais recentes.",
+          projects_midas1:
+            'Projeto FullStack de um aplicativo para controle financeiro pessoal em uma atividade da FIAP - Java, CSS e JavaScript.',
+          projects_ifood1:
+            'Projeto Front-End de um aplicativo para controle financeiro feito para o Ifood em uma atividade da FIAP - HTML, CSS e JavaScript.',
+          projects_immersion1:
+            'Imersão IA Alura',
+          projects_immersion2:
+            'Projeto Back-End para a Imersão IA Alura de um analisador de Semelhança de Documentos com Embeddings - Jupyter.',
+          projects_agendaj1:
+            'Agenda Java',
+          projects_agendaj2:
+            'Projeto Back-End de uma agenta de contatos com funções de adicionar, pesquisar, listar e apagar - Java.',
+          projects_agendap1:
+            'Agenda Python',
+          projects_agendap2:
+            'Projeto Back-End de uma agenta de contatos com funções de adicionar, pesquisar, listar e apagar - Python.',
+          projects_restaurant1:
+            'Cadastro Restaurante',
+          projects_restaurant2:
+            'Projeto Back-End de cadastro de restaurantes POO com função de listar - Python.',
           projects_plus:
-            'Este repositório é um site que criei enquanto realizava o curso "HTML e CSS: praticando HTML/CSS" da Alura.',
+            'Projeto Front-End da Alura para prática - HTML e CSS.',
           projects_books:
-            'Este repositório é um site responsivo (podendo ser usado em dispositivos mobile, tablet ou desktop) que criei enquanto realizava o curso "HTML e CSS: responsividade com mobile-first" da Alura.',
-          projects_number:
-            'Esse repositório é um jogo que criei enquanto realizava o curso "Lógica de programação: explore funções e listas" da Alura.',
+            'Projeto Front-End da Alura para prática de responsividade - HTML e CSS.',
+            projects_number1:
+            'Número Secreto',
+          projects_number2:
+            'Projeto Front-End da Alura para prática de responsividade - HTML, CSS e JavaScript.',
           experience_experience:
             'Minhas <span class="blue-text">Experiências</span>',
           experience_here: "Aqui estão as minhas experiências profissionais.",
@@ -140,12 +162,34 @@ document.addEventListener("DOMContentLoaded", () => {
           about_tools: 'Tools <span class="blue-text">I Use</span>',
           projects_projects: 'My Recent <span class="blue-text">Works</span>',
           projects_here: "Here are some of my latest projects.",
+          projects_midas1:
+            'FullStack project of an application for personal financial control in a FIAP activity - Java, CSS and JavaScript.',
+          projects_ifood1:
+            'Front-End project of a financial control application made for Ifood in a FIAP activity - HTML, CSS and JavaScript.',
+          projects_immersion1:
+            'Alura AI Immersion',
+          projects_immersion2:
+            'Back-End Project for the Alura AI Immersion of a Document Similarity Analyzer with Embeddings - Jupyter.',
+          projects_agendaj1:
+            'Java Agenda',
+          projects_agendaj2:
+            'Back-End project of a contact agent with add, search, list and delete functions - Java.',
+          projects_agendap1:
+            'Python Agenda',
+          projects_agendap2:
+            'Back-End project of a contact agent with add, search, list and delete functions - Python.',
+          projects_restaurant1:
+            'Restaurant Registration',
+          projects_restaurant2:
+            'Back-End project for registering OOP restaurants with list function - Python.',
           projects_plus:
-            'This repository is a website I created while taking the "HTML and CSS: practicing HTML/CSS" course from Alura.',
+            'Alura Front-End Project for Practice - HTML and CSS.',
           projects_books:
-            'This repository is a responsive website (which can be used on mobile, tablet or desktop devices) that I created while taking the "HTML and CSS: responsiveness with mobile-first" course from Alura.',
-          projects_number:
-            'This repository is a game I created while taking the course "Programming Logic: Explore Functions and Lists" from Alura.',
+            'Alura Front-End Project for Responsiveness Practice - HTML and CSS.',
+          projects_number1:
+            'Número Secreto',
+          projects_number2:
+            'Alura Front-End Project for Responsiveness Practice - HTML, CSS and JavaScript.',
           experience_experience:
             'My <span class="blue-text">Experiences</span>',
           experience_here: "Here are my professional experiences.",

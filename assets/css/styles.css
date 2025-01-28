@@ -19,7 +19,8 @@ body {
   font-family: var(--font-primary);
   color: var(--color-text-primary);
   opacity: 0;
-  transition: opacity 0.5s ease-in-out, background-color 0.3s ease, color 0.3s ease;
+  transition: opacity 0.5s ease-in-out, background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 body.fade-in {
@@ -70,18 +71,21 @@ body.light-theme .icon-light {
   text-decoration: none;
   padding: 10px 20px;
   background-color: var(--color-button);
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
   gap: 10px;
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .buttons a:hover {
   background-color: var(--color-button-hover);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .item-with-gradient {
@@ -92,6 +96,15 @@ body.light-theme .icon-light {
   overflow: hidden;
   transition: transform 0.3s ease;
   text-decoration: none;
+  opacity: 0;
+  transform: translateY(20px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: opacity 1s ease, transform 1s ease, box-shadow 0.3s ease; 
+}
+
+.item-with-gradient.fade-in {
+  opacity: 1; /* Torna visível */
+  transform: translateY(0); /* Retorna à posição original */
 }
 
 .item-with-gradient::before {
@@ -114,6 +127,7 @@ body.light-theme .icon-light {
 
 .item-with-gradient:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .item-with-gradient:hover::before {

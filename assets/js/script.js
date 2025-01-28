@@ -68,8 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
           header_certificates: "Certificados",
           header_contact: "Contato",
           header_resume: "Resumo",
-          home_hello: "Olá! ",
-          home_name: "Me chamo ",
+          home_hello: 'Olá! <span class="wave">👋🏼</span>',
+          home_name: 'Me chamo <span class="blue-text">Victor de Souza</span>',
           about_about: 'Sobre <span class="blue-text">mim</span>',
           about_hello:
             'Olá a todos, me chamo <span class="blue-text">Victor de Souza Santos</span>. Sou um entusiasta de tecnologia com uma sólida base em lógica de programação e habilidades em desenvolvimento de software.',
@@ -84,33 +84,28 @@ document.addEventListener("DOMContentLoaded", () => {
             'Meus Trabalhos <span class="blue-text">Recentes</span>',
           projects_here: "Aqui estão alguns dos meus projetos mais recentes.",
           projects_midas1:
-            'Projeto FullStack de um aplicativo para controle financeiro pessoal em uma atividade da FIAP - Java, CSS e JavaScript.',
+            "Projeto FullStack de um aplicativo para controle financeiro pessoal em uma atividade da FIAP - Java, CSS e JavaScript.",
           projects_ifood1:
-            'Projeto Front-End de um aplicativo para controle financeiro feito para o Ifood em uma atividade da FIAP - HTML, CSS e JavaScript.',
-          projects_immersion1:
-            'Imersão IA Alura',
+            "Projeto Front-End de um aplicativo para controle financeiro feito para o Ifood em uma atividade da FIAP - HTML, CSS e JavaScript.",
+          projects_immersion1: "Imersão IA Alura",
           projects_immersion2:
-            'Projeto Back-End para a Imersão IA Alura de um analisador de Semelhança de Documentos com Embeddings - Jupyter.',
-          projects_agendaj1:
-            'Agenda Java',
+            "Projeto Back-End para a Imersão IA Alura de um analisador de Semelhança de Documentos com Embeddings - Jupyter.",
+          projects_agendaj1: "Agenda Java",
           projects_agendaj2:
-            'Projeto Back-End de uma agenta de contatos com funções de adicionar, pesquisar, listar e apagar - Java.',
-          projects_agendap1:
-            'Agenda Python',
+            "Projeto Back-End de uma agenta de contatos com funções de adicionar, pesquisar, listar e apagar - Java.",
+          projects_agendap1: "Agenda Python",
           projects_agendap2:
-            'Projeto Back-End de uma agenta de contatos com funções de adicionar, pesquisar, listar e apagar - Python.',
-          projects_restaurant1:
-            'Cadastro Restaurante',
+            "Projeto Back-End de uma agenta de contatos com funções de adicionar, pesquisar, listar e apagar - Python.",
+          projects_restaurant1: "Cadastro Restaurante",
           projects_restaurant2:
-            'Projeto Back-End de cadastro de restaurantes POO com função de listar - Python.',
+            "Projeto Back-End de cadastro de restaurantes POO com função de listar - Python.",
           projects_plus:
-            'Projeto Front-End da Alura para prática - HTML e CSS.',
+            "Projeto Front-End da Alura para prática - HTML e CSS.",
           projects_books:
-            'Projeto Front-End da Alura para prática de responsividade - HTML e CSS.',
-            projects_number1:
-            'Número Secreto',
+            "Projeto Front-End da Alura para prática de responsividade - HTML e CSS.",
+          projects_number1: "Número Secreto",
           projects_number2:
-            'Projeto Front-End da Alura para prática de responsividade - HTML, CSS e JavaScript.',
+            "Projeto Front-End da Alura para prática de responsividade - HTML, CSS e JavaScript.",
           experience_experience:
             'Minhas <span class="blue-text">Experiências</span>',
           experience_here: "Aqui estão as minhas experiências profissionais.",
@@ -121,21 +116,21 @@ document.addEventListener("DOMContentLoaded", () => {
           certificates_certificates:
             'Meus <span class="blue-text">Certificados</span>',
           certificates_here: "Aqui estão os meus certificados.",
-          certificates_title1: "A Partir do Zero: Iniciante em Programação",
-          certificates_text1:
+          certificates_beginner1: "A Partir do Zero: Iniciante em Programação",
+          certificates_beginner2:
             "Certificado de conclusão do curso para iniciantes em programação disponibilizado pela Alura.",
-          certificates_title2: "A Partir do Zero: HTML e CSS para Projetos Web",
-          certificates_text2:
+          certificates_html1: "A Partir do Zero: HTML e CSS para Projetos Web",
+          certificates_html2:
             "Certificado de conclusão do curso para iniciantes em HTML e CSS.",
-          certificates_title3:
+          certificates_prototyping1:
             "Qualificação Profissional em Análise de Sistemas e Prototipagem Web",
-          certificates_text3:
+          certificates_prototyping2:
             "Certificado de conclusão do primeiro semestre do curso de Análise e Desenvolvimento de Sistemas da FIAP.",
-          certificates_title4:
+          certificates_analysis1:
             "Qualificação Profissional em Análise e Design Web 2.0",
-          certificates_text4:
+          certificates_analysis2:
             "Certificado de conclusão do segundo semestre do curso de Análise e Desenvolvimento de Sistemas da FIAP.",
-          certificates_text5:
+          certificates_ifood1:
             "Certificado do terceiro lugar no Enterprise Challenge FIAP - Ifood.",
           contact_contact: 'Entre em <span class="blue-text">Contato</span>',
           contact_touch:
@@ -149,8 +144,9 @@ document.addEventListener("DOMContentLoaded", () => {
           header_certificates: "Certificates",
           header_contact: "Contact",
           header_resume: "Resume",
-          home_hello: "Hello! ",
-          home_name: "My name is ",
+          home_hello: 'Hello! <span class="wave">👋🏼</span>',
+          home_name:
+            'My name is <span class="blue-text">Victor de Souza</span>',
           about_about: 'About <span class="blue-text">me</span>',
           about_hello:
             'Hello everyone, my name is <span class="blue-text">Victor de Souza Santos</span>. I am a technology enthusiast with a solid foundation in programming logic and software development skills.',
@@ -163,33 +159,27 @@ document.addEventListener("DOMContentLoaded", () => {
           projects_projects: 'My Recent <span class="blue-text">Works</span>',
           projects_here: "Here are some of my latest projects.",
           projects_midas1:
-            'FullStack project of an application for personal financial control in a FIAP activity - Java, CSS and JavaScript.',
+            "FullStack project of an application for personal financial control in a FIAP activity - Java, CSS and JavaScript.",
           projects_ifood1:
-            'Front-End project of a financial control application made for Ifood in a FIAP activity - HTML, CSS and JavaScript.',
-          projects_immersion1:
-            'Alura AI Immersion',
+            "Front-End project of a financial control application made for Ifood in a FIAP activity - HTML, CSS and JavaScript.",
+          projects_immersion1: "Alura AI Immersion",
           projects_immersion2:
-            'Back-End Project for the Alura AI Immersion of a Document Similarity Analyzer with Embeddings - Jupyter.',
-          projects_agendaj1:
-            'Java Agenda',
+            "Back-End Project for the Alura AI Immersion of a Document Similarity Analyzer with Embeddings - Jupyter.",
+          projects_agendaj1: "Java Agenda",
           projects_agendaj2:
-            'Back-End project of a contact agent with add, search, list and delete functions - Java.',
-          projects_agendap1:
-            'Python Agenda',
+            "Back-End project of a contact agent with add, search, list and delete functions - Java.",
+          projects_agendap1: "Python Agenda",
           projects_agendap2:
-            'Back-End project of a contact agent with add, search, list and delete functions - Python.',
-          projects_restaurant1:
-            'Restaurant Registration',
+            "Back-End project of a contact agent with add, search, list and delete functions - Python.",
+          projects_restaurant1: "Restaurant Registration",
           projects_restaurant2:
-            'Back-End project for registering OOP restaurants with list function - Python.',
-          projects_plus:
-            'Alura Front-End Project for Practice - HTML and CSS.',
+            "Back-End project for registering OOP restaurants with list function - Python.",
+          projects_plus: "Alura Front-End Project for Practice - HTML and CSS.",
           projects_books:
-            'Alura Front-End Project for Responsiveness Practice - HTML and CSS.',
-          projects_number1:
-            'Número Secreto',
+            "Alura Front-End Project for Responsiveness Practice - HTML and CSS.",
+          projects_number1: "Secret Number",
           projects_number2:
-            'Alura Front-End Project for Responsiveness Practice - HTML, CSS and JavaScript.',
+            "Alura Front-End Project for Responsiveness Practice - HTML, CSS and JavaScript.",
           experience_experience:
             'My <span class="blue-text">Experiences</span>',
           experience_here: "Here are my professional experiences.",
@@ -200,21 +190,21 @@ document.addEventListener("DOMContentLoaded", () => {
           certificates_certificates:
             'My <span class="blue-text">Certificates</span>',
           certificates_here: "Here are my certificates.",
-          certificates_title1: "From Scratch: Beginner Programming",
-          certificates_text1:
+          certificates_beginner1: "From Scratch: Beginner Programming",
+          certificates_beginner2:
             "Certificate of completion of the course for beginners in programming provided by Alura.",
-          certificates_title2: "From Scratch: HTML and CSS for Web Projects",
-          certificates_text2:
+          certificates_html1: "From Scratch: HTML and CSS for Web Projects",
+          certificates_html2:
             "Certificate of completion of the HTML and CSS beginner course.",
-          certificates_title3:
+          certificates_prototyping1:
             "Professional Qualification in Systems Analysis and Web Prototyping",
-          certificates_text3:
+          certificates_prototyping2:
             "Certificate of completion of the first semester of the Systems Analysis and Development course at FIAP.",
-          certificates_title4:
+          certificates_analysis1:
             "Professional Qualification in Web 2.0 Analysis and Design",
-          certificates_text4:
+          certificates_analysis2:
             "Certificate of completion of the second semester of the Systems Analysis and Development course at FIAP.",
-          certificates_text5:
+          certificates_ifood1:
             "Third place certificate in the Enterprise Challenge FIAP - Ifood.",
           contact_contact: 'Get in <span class="blue-text">Touch</span>',
           contact_touch: "Contact me through social media or send an email.",
@@ -367,6 +357,30 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
+
+  // Adicionando animação nos títulos
+  const animatedTitles = document.querySelectorAll(".item-with-gradient");
+
+  function observerCallback(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fade-in");
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  animatedTitles.forEach((animatedTitle) => {
+    observer.observe(animatedTitle);
+  });
 
   // Importa o footer
   fetch("../components/footer.html")

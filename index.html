@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecionando...</title>
+    <title>Loading...</title>
+    <link rel="stylesheet" href="assets/css/loading.css">
 </head>
 <body>
-    <p>Redirecionando para a página inicial...</p>
-    <script>
-        window.location.href = "pages/home.html";
-    </script>
+    <div class="loading-container">
+       <div class="star-bg"></div>
+       <div class="loading-content">
+          <div class="logo-animation">
+               <img class="logo-image" src="../assets/img/components/header/home-icon.svg" alt="Logo Portfólio">
+          </div>
+           <div class="progress-bar">
+               <div class="progress-bar-fill"></div>
+           </div>
+           <p class="loading-text">Loading...</p>
+       </div>
+    </div>
+    <script src="assets/js/loading.js"></script>
 </body>
 </html>

@@ -55,6 +55,10 @@ const translations = {
     header_certificates: "Certificados",
     header_contact: "Contato",
     header_resume: "Resumo",
+    header_download1: 'Download <span class="blue-text-modal">Currículo</span>',
+    header_download2: "Deseja realmente fazer o download do currículo?",
+    header_yes: "Sim",
+    header_no: "Não",
     home_hello: 'Olá! <span class="wave">👋🏼</span>',
     home_name: 'Me chamo <span class="blue-text">Victor de Souza</span>',
     about_about: 'Sobre <span class="blue-text">mim</span>',
@@ -127,6 +131,10 @@ const translations = {
     header_certificates: "Certificates",
     header_contact: "Contact",
     header_resume: "Resume",
+    header_download1: 'Curriculum <span class="blue-text-modal">Download</span>',
+    header_download2: "Do you really want to download the resume?",
+    header_yes: "Yes",
+    header_no: "No",
     home_hello: 'Hello! <span class="wave">👋🏼</span>',
     home_name: 'My name is <span class="blue-text">Victor de Souza</span>',
     about_about: 'About <span class="blue-text">me</span>',
@@ -288,6 +296,10 @@ const downloadModal = document.getElementById("downloadModal");
 const confirmDownloadButton = document.getElementById("confirmDownload");
 const cancelDownloadButton = document.getElementById("cancelDownload");
 
+// Variáveis para os links dos currículos
+const cvPtBr = "../assets/docs/curriculo.pdf"; // Caminho do currículo em português
+const cvEnUs = "../assets/docs/curriculum.pdf"; // Caminho do currículo em inglês
+
 function openModal() {
   downloadModal.classList.add("active");
 }
@@ -296,10 +308,11 @@ function closeModal() {
   downloadModal.classList.remove("active");
 }
 
-function downloadPDF() {
+function downloadPDF(language) {
   const link = document.createElement("a");
-  link.href = "../assets/docs/curriculo.pdf";
-  link.download = "Victor-de-Souza-Curriculo.pdf";
+  const selectedCv = language === 'pt-BR' ? cvPtBr : cvEnUs; // Seleciona o CV pelo idioma
+  link.href = selectedCv;
+  link.download = language === 'pt-BR' ? "Victor-de-Souza-Curriculo.pdf" : "Victor-de-Souza-Resume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

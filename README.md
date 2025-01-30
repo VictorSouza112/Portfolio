@@ -1,41 +1,41 @@
 # Portfólio Web Interativo - Victor de Souza 🚀
-## Sumário
-1.  **Apresentação do Portfólio**
-2.  **Código Geral**
+## Sumário ![Icone do Sumário](assets/img/readme/summary.svg)
+1.  **Apresentação do Portfólio ![Icone de Portfolio](assets/img/readme/icon.svg)**
+2.  **Código Geral ![Icone de Código](assets/img/readme/code.svg)**
     *   2.1.  `styles.css`
     *   2.2.  `script.js`
-3.  **Tela de Carregamento**
+3.  **Tela de Carregamento ![Icone de Carregamento](assets/img/readme/loading.svg)**
     *   3.1.  `index.html`
     *   3.2.  `loading.css`
     *   3.3.  `loading.js`
-4.  **Header**
+4.  **Header ![Icone de Header](assets/img/readme/header.svg)**
     *   4.1.  `header.html`
     *   4.2.  `header.css`
     *   4.3.  `header.js`
-5.  **Footer**
+5.  **Footer ![Icone de Footer](assets/img/readme/footer.svg)**
     *   5.1.  `footer.html`
     *   5.2.  `footer.css`
-6.  **Home**
+6.  **Home ![Icone de Home](assets/img/components/header/home-icon.svg)**
     *   6.1.  `home.html`
     *   6.2.  `home.css`
     *   6.3.  `typing.js`
-7.  **About**
+7.  **About ![Icone de About](assets/img/components/header/about-icon.svg)**
     *   7.1.  `about.html`
     *   7.2.  `about.css`
-8.  **Projects**
+8.  **Projects ![Icone de Projects](assets/img/components/header/projects-icon.svg)**
     *   8.1.  `projects.html`
     *   8.2.  `projects.css`
-9.  **Experience**
+9.  **Experience ![Icone de Experience](assets/img/components/header/experience-icon.svg)**
     *   9.1.  `experience.html`
     *   9.2.  `experience.css`
-10. **Certificates**
+10. **Certificates ![Icone de Certificates](assets/img/components/header/certificates-icon.svg)**
     *   10.1. `certificates.html`
     *   10.2. `certificates.css`
-11. **Contact**
+11. **Contact ![Icone de Contact](assets/img/components/header/contact-icon.svg)**
     *   11.1. `contact.html`
     *   11.2. `contact.css`
 
-## 1. Apresentação do Portfólio
+## 1. Apresentação do Portfólio ![Icone de Portfolio](assets/img/readme/icon.svg)
 
 🎉 **Bem-vindo ao meu Portfólio Web!** 🎉
 
@@ -60,7 +60,7 @@ Navegue pelas páginas e descubra:
 
 Este portfólio foi criado com o objetivo de mostrar minhas habilidades técnicas, minha capacidade de criar interfaces de usuário atraentes e funcionais, e minha dedicação ao desenvolvimento web. Ele é um convite para que você conheça um pouco mais sobre mim e meu trabalho.
 
-## 2. Código Geral
+## 2. Código Geral ![Icone de Código](assets/img/readme/code.svg)
 
 Nesta seção, vamos explorar os arquivos que formam a base do seu portfólio: o `styles.css`, responsável pelo design e estilo, e o `script.js`, que adiciona interatividade e comportamentos dinâmicos.
 
@@ -92,7 +92,8 @@ O arquivo `script.js` é a força motriz por trás da interatividade e da dinâm
 
 Em resumo, o `script.js` adiciona a camada de interatividade que faz com que seu portfólio seja dinâmico, responsivo e agradável de usar.
 
-## 3. Tela de Carregamento
+## 3. Tela de Carregamento ![Icone de Carregamento](assets/img/readme/loading.svg)
+![Tela de Carregamento](assets/img/readme/loading.jpg)
 
 A tela de carregamento é a primeira experiência visual que o usuário tem ao acessar seu portfólio. Ela é projetada para ser atraente e informativa, enquanto o conteúdo principal é carregado. Esta seção explora os arquivos `index.html`, `loading.css` e `loading.js` que juntos criam essa experiência inicial.
 
@@ -130,7 +131,8 @@ O arquivo `loading.js` é responsável pela lógica da tela de carregamento, con
 *   **Transição para a Próxima Página:** Uma vez que a barra de progresso é preenchida, a tela de carregamento desaparece suavemente e o usuário é redirecionado para a página principal do portfólio.
 *   **Geração de Estrelas:** Utiliza JavaScript para gerar estrelas aleatórias, utilizando diversas cores e tamanhos, criando um efeito de fundo estrelado e cósmico.
 
-## 4. Header
+## 4. Header ![Icone de Header](assets/img/readme/header.svg)
+![Header](assets/img/readme/header.jpg)
 
 O header é um componente crucial do seu portfólio, pois ele oferece a navegação principal e contém elementos importantes, como o seletor de tema e o seletor de idioma. Esta seção abordará os arquivos `header.html`, `header.css` e `header.js` que dão vida a este componente.
 
@@ -173,7 +175,8 @@ O arquivo `header.js` é responsável pela lógica e interatividade do cabeçalh
 *   **Transição do Background do Header:** O script adiciona ou remove a classe `header-bg` ao header ao scrollar a página, criando um efeito interessante ao visualizar a página.
 *   **Eventos de Clique:** O script utiliza eventos de clique nos botões de tema, idioma, menu lateral e download para garantir que a experiência do usuário seja responsiva.
 
-## 5. Footer
+## 5. Footer ![Icone de Footer](assets/img/readme/footer.svg)
+![Footer](assets/img/readme/footer.jpg)
 
 O footer, ou rodapé, é um componente importante do seu portfólio que, embora geralmente se encontre na parte inferior da página, tem um papel importante na identidade do site, contendo informações de contato e direitos autorais. Nesta seção, vamos detalhar os arquivos `footer.html` e `footer.css` que compõem este elemento.
 
@@ -201,7 +204,8 @@ O arquivo `footer.css` define a estilização do rodapé, garantindo que ele sej
 *   **Transições:** Os links para as redes sociais têm uma pequena transição ao passar o mouse, criando um efeito sutil de interatividade.
 *   **Alinhamento:** Os textos e ícones estão alinhados para criar uma estrutura visualmente organizada e profissional.
 
-## 6. Home
+## 6. Home ![Icone de Home](assets/img/components/header/home-icon.svg)
+![Tela de Home](assets/img/readme/home.jpg)
 
 A página "Home" é a porta de entrada do seu portfólio e tem como objetivo apresentar você de forma clara e atraente. Esta seção abordará os arquivos `home.html`, `home.css` e `typing.js` que compõem esta página.
 
@@ -241,7 +245,8 @@ O arquivo `typing.js` é responsável pela lógica de animação do texto da pro
 *   **Array de Textos:** O script utiliza um array de textos, que permite alternar a profissão exibida, criando uma sensação de dinamismo.
 *   **Controle de Velocidade:** O script controla a velocidade da digitação e o delay para os próximos textos e exclusão, criando uma animação suave e equilibrada.
 
-## 7. About
+## 7. About ![Icone de About](assets/img/components/header/about-icon.svg)
+![Tela de About](assets/img/readme/about.jpg)
 
 A página "About" é o espaço onde você compartilha mais sobre sua história, habilidades e as ferramentas que você utiliza no seu trabalho como desenvolvedor. Esta seção abordará os arquivos `about.html` e `about.css` que dão forma a esta página.
 
@@ -271,7 +276,8 @@ O arquivo `about.css` define a estilização da página "Sobre mim", garantindo 
 *   **Responsividade:** O layout se adapta a diferentes tamanhos de tela, com o ajuste das seções e da quantidade de colunas no grid de habilidades e ferramentas.
 *   **Efeito de Gradiente:** Os cards com os ícones utilizam o efeito de gradiente ao passar o mouse, criando um detalhe visual interessante.
 
-## 8. Projects
+## 8. Projects ![Icone de Projects](assets/img/components/header/projects-icon.svg)
+![Tela de Projects](assets/img/readme/projects.jpg)
 
 A página "Projects" é onde você apresenta seus trabalhos mais recentes, destacando suas habilidades e a diversidade de seus projetos. Esta seção abordará os arquivos `projects.html` e `projects.css` que dão vida a esta página.
 
@@ -301,7 +307,8 @@ O arquivo `projects.css` define a estilização da página "Projetos", garantind
 *   **Efeito de Gradiente:** Os cards dos projetos utilizam o efeito de gradiente ao passar o mouse, criando um detalhe visual interessante.
 *   **Botões:** Os botões dos projetos são estilizados de forma clara e intuitiva, com transição ao passar o mouse, direcionando para o link do Github ou da Vercel.
 
-## 9. Experience
+## 9. Experience ![Icone de Experience](assets/img/components/header/experience-icon.svg)
+![Tela de Experience](assets/img/readme/experience.jpg)
 
 A página "Experience" é onde você compartilha suas experiências profissionais, destacando as empresas em que trabalhou e as responsabilidades que desempenhou. Esta seção abordará os arquivos `experience.html` e `experience.css` que dão vida a esta página.
 
@@ -330,7 +337,8 @@ O arquivo `experience.css` define a estilização da página "Experiência", gar
 *   **Responsividade:** O layout se adapta a diferentes tamanhos de tela, com o ajuste das seções de acordo com a resolução.
 *   **Efeito de Gradiente:** O card da experiência utiliza o efeito de gradiente ao passar o mouse, criando um detalhe visual interessante.
 
-## 10. Certificates
+## 10. Certificates ![Icone de Certificates](assets/img/components/header/certificates-icon.svg)
+![Tela de Certificates](assets/img/readme/certificates.jpg)
 
 A página "Certificates" é onde você apresenta seus certificados, destacando suas conquistas e seu compromisso com o aprendizado contínuo. Esta seção abordará os arquivos `certificates.html` e `certificates.css` que dão forma a esta página.
 
@@ -360,7 +368,8 @@ O arquivo `certificates.css` define a estilização da página "Certificados", g
 *   **Efeito de Gradiente:** Os cards dos certificados utilizam o efeito de gradiente ao passar o mouse, criando um detalhe visual interessante.
 *   **Botões:** Os botões dos certificados são estilizados de forma clara e intuitiva, direcionando para o download dos respectivos certificados.
 
-## 11. Contact
+## 11. Contact ![Icone de Contact](assets/img/components/header/contact-icon.svg)
+![Tela de Contact](assets/img/readme/contact.jpg)
 
 A página "Contact" é onde você disponibiliza suas informações de contato, facilitando que as pessoas se conectem com você através de seus canais de comunicação preferidos. Esta seção abordará os arquivos `contact.html` e `contact.css` que dão vida a esta página.
 

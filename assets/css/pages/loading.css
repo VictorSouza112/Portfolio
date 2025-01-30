@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("../img/background-loading.svg");
+  background-image: url("../../img/pages/loading/background-loading.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -90,7 +90,7 @@ body {
   left: 0;
   width: 25px;
   height: 25px;
-  background-image: url("../img/rocket.svg");
+  background-image: url("../../img/pages/loading/rocket.svg");
   background-size: contain;
   background-repeat: no-repeat;
   animation: rocketMove 2s linear forwards;
